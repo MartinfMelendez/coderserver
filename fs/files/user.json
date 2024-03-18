@@ -1,23 +1,37 @@
 [
   {
-    "id": "85dffcd0f30bea32c7721744",
+    "id": "c08cc7308b7f7837f31905bf",
     "photo": "algo.jpg",
     "email": "pedro@das.com",
     "password": "pedrodas",
-    "role": "56bd65d4e77596cbfe983e4b"
+    "role": "5f398b0baba79ca9e0b7cc49"
   },
   {
-    "id": "e977ff700e21afe262b9abdb",
+    "id": "8aa0321afcb510c94410a89c",
     "photo": "algo.jpg",
     "email": "martin@das.com",
     "password": "pedrodas",
-    "role": "d2b228a2d71b3112942e903c"
+    "role": "07861573a2549f1015060f83"
   },
   {
-    "id": "9f520445c69e08cee983386a",
+    "id": "d30171f80360c90932d9ef93",
+    "photo": "algo.jpg",
+    "email": "pedro@das.com",
+    "password": "pedrodas",
+    "role": "6e4b176b59e484e757f2098f"
+  },
+  {
+    "id": "a0813677193390aafac8137b",
+    "photo": "algo.jpg",
+    "email": "martin@das.com",
+    "password": "pedrodas",
+    "role": "288b7dedac78bf69bd1fc1f1"
+  },
+  {
+    "id": "52a7b276f72bcc2b402e377b",
     "photo": "foto.jpg",
     "email": "maxi@das.com",
     "password": "pedrodas",
-    "role": "2f130556624d9efc91ce8eb0"
+    "role": "9e43ec233b625a4d85070610"
   }
 ]

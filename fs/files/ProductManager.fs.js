@@ -128,8 +128,8 @@ async function test() {
     stock: "20",
   });
   await product.read();
-  await product.readOne("61a2044ece827b17823b1f75");
-  await product.destroy("61a2044ece827b17823b1f75");
+  await product.readOne("1f086c9b843786e3f0565c5b");
+  await product.destroy("84a9109ad178d93e0523ae3d");
 }
 
 test();
