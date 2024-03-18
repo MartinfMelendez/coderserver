@@ -123,7 +123,7 @@ async function test() {
   });
   await product.create({
     title: "alpargata",
-    photo: "alpargata.jpg",
+    photo: "",
     category: "calzado",
     price: "70",
     stock: "20",
