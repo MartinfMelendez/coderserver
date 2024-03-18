@@ -1,0 +1,23 @@
+[
+  {
+    "id": "85dffcd0f30bea32c7721744",
+    "photo": "algo.jpg",
+    "email": "pedro@das.com",
+    "password": "pedrodas",
+    "role": "56bd65d4e77596cbfe983e4b"
+  },
+  {
+    "id": "e977ff700e21afe262b9abdb",
+    "photo": "algo.jpg",
+    "email": "martin@das.com",
+    "password": "pedrodas",
+    "role": "d2b228a2d71b3112942e903c"
+  },
+  {
+    "id": "9f520445c69e08cee983386a",
+    "photo": "foto.jpg",
+    "email": "maxi@das.com",
+    "password": "pedrodas",
+    "role": "2f130556624d9efc91ce8eb0"
+  }
+]
