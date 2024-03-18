@@ -26,7 +26,7 @@ class ProductManager {
         const product = {
           id: crypto.randomBytes(12).toString("hex"),
           title: data.title,
-          photo: data.photo || "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fes%2Fsearch%2Fdefault-image-icon&psig=AOvVaw3eGnYWbC8tfRbg7O8Hk8rt&ust=1710880911955000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIC867DW_oQDFQAAAAAdAAAAABAE",
+          photo: data.photo || "./default.jpg",
           category: data.category,
           price: data.price,
           stock: data.stock,
