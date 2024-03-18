@@ -1,6 +1,6 @@
 [
   {
-    "id": "a5a4373e656590d712e7df31",
+    "id": "50bc8f58add8fa56bc2d06c2",
     "title": "zapato",
     "photo": "zapato.jpg",
     "category": "calzado",
@@ -8,7 +8,7 @@
     "stock": "20"
   },
   {
-    "id": "7fe1f6a8486c245dcd9c38ca",
+    "id": "c4277d7584d91934caf540e9",
     "title": "zapatilla",
     "photo": "zapatilla.jpg",
     "category": "calzado",
@@ -16,15 +16,15 @@
     "stock": "20"
   },
   {
-    "id": "541efdf0194bf5f60a5bc6fb",
+    "id": "1fbbfd5f913113145491e30c",
     "title": "estilet",
-    "photo": "estileto.jpg",
+    "photo": "./default.jpg",
     "category": "calzado",
     "price": "70",
     "stock": "20"
   },
   {
-    "id": "a9c76a0e5c8d3df251e3c74e",
+    "id": "486cfff937235cc659fa9f6d",
     "title": "botines",
     "photo": "botines.jpg",
     "category": "calzado",
@@ -32,7 +32,7 @@
     "stock": "20"
   },
   {
-    "id": "4d6da4c00d50044f7e4c4abe",
+    "id": "02f75137cd5495b96b57ab17",
     "title": "alpargata",
     "photo": "alpargata.jpg",
     "category": "calzado",

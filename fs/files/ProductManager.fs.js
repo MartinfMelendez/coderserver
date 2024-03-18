@@ -109,7 +109,7 @@ async function test() {
   });
   await product.create({
     title: "estilet",
-    photo: "estileto.jpg",
+    photo: "",
     category: "calzado",
     price: "70",
     stock: "20",
