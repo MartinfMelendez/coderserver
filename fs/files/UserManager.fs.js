@@ -110,8 +110,8 @@ async function test() {
     password: "",
   });
   await user.read();
-  //await user.readOne("df31056aef91b7de048fdc78")
-  //await user.destroy("f6aa8edda5d86b9dbe939321")
+  await user.readOne("df31056aef91b7de048fdc78")
+  await user.destroy("f6aa8edda5d86b9dbe939321")
 }
 
 test();
