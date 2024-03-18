@@ -34,8 +34,9 @@ class ProductManager {
         let all = await fs.promises.readFile(this.path, "utf-8");
         all = JSON.parse(all);
         all.push(product), (all = JSON.stringify(all, null, 2));
-        await fs.promises.writeFile(this.path, all);
         console.log("Producto creado");
+        await fs.promises.writeFile(this.path, all);
+        
         return product;
       }
     } catch (error) {
