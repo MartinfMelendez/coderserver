@@ -26,7 +26,7 @@ class ProductManager {
         const product = {
           id: crypto.randomBytes(12).toString("hex"),
           title: data.title,
-          photo: data.photo || "foto.jpg",
+          photo: data.photo || "./default.jpg",
           category: data.category,
           price: data.price,
           stock: data.stock,
@@ -34,8 +34,9 @@ class ProductManager {
         let all = await fs.promises.readFile(this.path, "utf-8");
         all = JSON.parse(all);
         all.push(product), (all = JSON.stringify(all, null, 2));
-        await fs.promises.writeFile(this.path, all);
         console.log("Producto creado");
+        await fs.promises.writeFile(this.path, all);
+        
         return product;
       }
     } catch (error) {
@@ -108,7 +109,7 @@ async function test() {
   });
   await product.create({
     title: "estilet",
-    photo: "estileto.jpg",
+    photo: "",
     category: "calzado",
     price: "70",
     stock: "20",
@@ -122,14 +123,14 @@ async function test() {
   });
   await product.create({
     title: "alpargata",
-    photo: "alpargata.jpg",
+    photo: "",
     category: "calzado",
     price: "70",
     stock: "20",
   });
   await product.read();
-  await product.readOne("61a2044ece827b17823b1f75");
-  await product.destroy("61a2044ece827b17823b1f75");
+  await product.readOne("1f086c9b843786e3f0565c5b");
+  await product.destroy("84a9109ad178d93e0523ae3d");
 }
 
 test();

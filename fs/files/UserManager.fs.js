@@ -104,14 +104,10 @@ async function test() {
     email: "maxi@das.com",
     password: "pedrodas",
   });
-  await user.create({
-    photo: "algo.jpg",
-    email: "juan@das.com",
-    password: "",
-  });
+
   await user.read();
-  //await user.readOne("df31056aef91b7de048fdc78")
-  //await user.destroy("f6aa8edda5d86b9dbe939321")
+  await user.readOne("c08cc7308b7f7837f31905bf")
+  await user.destroy("3f413d4c844335e2688a0882")
 }
 
 test();
