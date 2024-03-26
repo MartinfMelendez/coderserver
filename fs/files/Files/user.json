@@ -1,0 +1,37 @@
+[
+  {
+    "id": "9b0162d5dd7a5c08b3a9ac3f",
+    "photo": "imagen1.jpg",
+    "email": "primermail@gmail.com",
+    "password": "clave123",
+    "role": "632b5836483a697218cd97ba"
+  },
+  {
+    "id": "2debf215b96df97957bb2bd9",
+    "photo": "imagen2.jpg",
+    "email": "segundomail@gmail.com",
+    "password": "clave456",
+    "role": "1be7a68a6e4349edeb27836d"
+  },
+  {
+    "id": "93ecc932b592802f2f6c9fa6",
+    "photo": "imagen3.jpg",
+    "email": "tercermail@gmail.com",
+    "password": "clave789",
+    "role": "ae04d988d1710dd17bb7c225"
+  },
+  {
+    "id": "2a802af6ca34de5bcb405587",
+    "photo": "imagen4.jpg",
+    "email": "cuartomail@gmail.com",
+    "password": "clave135",
+    "role": "c860f97121a60535e5bc2aee"
+  },
+  {
+    "id": "b794e4fde8a39640c1a06057",
+    "photo": "imagen5.jpg",
+    "email": "cuartomail@gmail.com",
+    "password": "clave680",
+    "role": "227d1d8572db0d5fed95dd07"
+  }
+]
