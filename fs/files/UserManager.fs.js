@@ -1,9 +1,9 @@
-const fs = require("fs");
-const crypto = require("crypto");
+import fs from "fs";
+import crypto from "crypto";
 
 class UserManager {
   constructor() {
-    this.path = "./user.json"; //ruta donde se crea el archivo
+    this.path = "./fs/files/Files/user.json"; //ruta donde se crea el archivo
     this.init();
   }
   init() {
@@ -24,7 +24,9 @@ class UserManager {
       } else {
         const user = {
           id: crypto.randomBytes(12).toString("hex"),
-          photo: data.photo || "foto.jpg",
+          photo:
+            data.photo ||
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUnI9BY9FWdTUJ8kFyTM0SaHngCGIbjxK_UXrM_7U8aw&s",
           email: data.email,
           password: data.password,
           role: crypto.randomBytes(12).toString("hex"),
@@ -34,7 +36,7 @@ class UserManager {
         all.push(user);
         all = JSON.stringify(all, null, 2);
         await fs.promises.writeFile(this.path, all);
-        console.log("Usuario creado");
+        //console.log("Usuario creado");
         return user;
       }
     } catch (error) {
@@ -42,11 +44,16 @@ class UserManager {
     }
   }
 
-  async read() {
+  async read(email) {
     try {
       let all = await fs.promises.readFile(this.path, "utf-8");
       all = JSON.parse(all);
-      return all;
+      all = all.filter((each) => each.email === email);
+      if (all.length === 0) {
+        return null;
+      } else {
+        return all;
+      }
     } catch (error) {
       throw error;
     }
@@ -86,7 +93,7 @@ class UserManager {
     }
   }
 }
-
+/*
 async function test() {
   const user = new UserManager();
   await user.create({
@@ -115,3 +122,7 @@ async function test() {
 }
 
 test();
+*/
+
+const userManager = new UserManager();
+export default userManager;

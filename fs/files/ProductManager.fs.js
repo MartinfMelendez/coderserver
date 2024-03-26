@@ -1,9 +1,9 @@
-const fs = require("fs");
-const crypto = require("crypto");
+import fs from "fs";
+import crypto from "crypto";
 
 class ProductManager {
   constructor() {
-    this.path = "./product.json"; //ruta donde se crea el archivo
+    this.path = "./fs/files/Files/product.json"; //ruta donde se crea el archivo
     this.init();
   }
   init() {
@@ -26,7 +26,9 @@ class ProductManager {
         const product = {
           id: crypto.randomBytes(12).toString("hex"),
           title: data.title,
-          photo: data.photo || "foto.jpg",
+          photo:
+            data.photo ||
+            "https://nayemdevs.com/wp-content/uploads/2020/03/default-product-image.png",
           category: data.category,
           price: data.price,
           stock: data.stock,
@@ -42,11 +44,17 @@ class ProductManager {
       throw error;
     }
   }
-  async read() {
+  async read(cat = "ropa") {
     try {
       let all = await fs.promises.readFile(this.path, "utf-8");
       all = JSON.parse(all);
-      return all;
+      all = all.filter((each) => each.category === cat);
+      if (all.length === 0) {
+        return null;
+      } else {
+        console.log(all)
+        return all;
+      }
     } catch (error) {
       throw error;
     }
@@ -56,12 +64,14 @@ class ProductManager {
       let all = await fs.promises.readFile(this.path, "utf-8");
       all = JSON.parse(all);
       let one = all.find((each) => each.id === id);
-      if (!one) {
-        throw new Error("No encontrado");
-      } else {
-        console.log("Producto buscado")
+
+      if (one) {
+        console.log("Producto buscado");
         console.log(one);
         return one;
+       
+      } else {
+        throw new Error("No encontrado");
       }
     } catch (error) {
       console.log(error);
@@ -88,7 +98,7 @@ class ProductManager {
     }
   }
 }
-
+/*
 async function test() {
   const product = new ProductManager();
 
@@ -133,3 +143,7 @@ async function test() {
 }
 
 test();
+*/
+
+const productManager = new ProductManager();
+export default productManager;
