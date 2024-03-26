@@ -26,5 +26,19 @@
     "email": "cuartomail@gmail.com",
     "password": "clave135",
     "role": "c860f97121a60535e5bc2aee"
+  },
+  {
+    "id": "b794e4fde8a39640c1a06057",
+    "photo": "imagen5.jpg",
+    "email": "cuartomail@gmail.com",
+    "password": "clave680",
+    "role": "227d1d8572db0d5fed95dd07"
+  },
+  {
+    "id": "fff9e1e6cf15dc53dfe1ddb4",
+    "photo": "imagen5.jpg",
+    "email": "cuartomail@gmail.com",
+    "password": "clave680",
+    "role": "94688046981d90fcc2cc5829"
   }
 ]
